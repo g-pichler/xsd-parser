@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:ct="http://example.com/common/types/01"
+            targetNamespace="http://example.com/common/types/01"
+            elementFormDefault="qualified">
+
+    <xsd:complexType name="HeaderT">
+        <xsd:sequence>
+            <xsd:element name="MessageId" type="xsd:string"/>
+            <xsd:element name="Sender" type="xsd:string"/>
+            <xsd:element name="Receiver" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="StatusT">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="OK"/>
+            <xsd:enumeration value="ERROR"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

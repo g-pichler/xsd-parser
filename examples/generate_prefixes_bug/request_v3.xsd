@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:rq="http://example.com/request/03"
+            targetNamespace="http://example.com/request/03"
+            elementFormDefault="qualified">
+
+    <xsd:element name="Request">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Payload" type="xsd:string"/>
+                <xsd:element name="Priority" type="xsd:integer" minOccurs="0"/>
+                <xsd:element name="Urgency" type="xsd:string" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

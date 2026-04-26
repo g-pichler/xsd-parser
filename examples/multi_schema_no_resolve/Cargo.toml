@@ -1,0 +1,15 @@
+[package]
+name = "multi_schema_no_resolve"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+# xsd-parser-types = { version = "0.2.1", features = [ 'quick-xml' ] }
+xsd-parser-types = { path = '../../xsd-parser-types/', features = [ 'quick-xml' ]}
+
+[build-dependencies]
+# xsd-parser = { version = "1.5.2" }
+xsd-parser = { path = '../../xsd-parser/' }
+# xsd-parser-types = { version = "0.2.1" }
+xsd-parser-types = { path = '../../xsd-parser-types/' }

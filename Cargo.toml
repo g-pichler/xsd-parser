@@ -12,6 +12,10 @@ default-members = [
     "xsd-parser-types",
     "xsd-parser",
 ]
+exclude = [
+    "examples/multi_schema_no_resolve",
+    "examples/generate_prefixes_bug",
+]
 
 [workspace.package]
 license = "MIT"

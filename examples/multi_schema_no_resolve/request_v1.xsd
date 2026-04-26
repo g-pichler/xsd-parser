@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:ct="http://example.com/common/types/01"
+            xmlns:rq1="http://example.com/request/01"
+            targetNamespace="http://example.com/request/01"
+            elementFormDefault="qualified">
+
+    <xsd:import namespace="http://example.com/common/types/01"
+                schemaLocation="common_types.xsd"/>
+
+    <xsd:element name="Request">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Header" type="ct:HeaderT"/>
+                <xsd:element name="Payload" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
